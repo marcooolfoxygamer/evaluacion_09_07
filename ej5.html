@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function suma_elementos(num) {
+            vec = []
+            for (let i = 0;i<num;i++) {
+                n_vec = Number(prompt("Digite el número que irá en el vector"))
+                vec.push(n_vec)
+            }
+
+            suma = 0
+
+            for (let x = 0; x < vec.length; x++) {
+                suma += vec[x]
+            }
+
+            alert('la suma dió: '+ String(suma))
+        }
+
+        num = Number(prompt("Digite la cantidad de elementos que tendrá el vector"))
+
+        suma_elementos(num)
+    </script>
+</body>
+</html>
