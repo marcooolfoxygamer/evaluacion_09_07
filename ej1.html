@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        cant = Number(prompt("Digite la cantidad de empleados a calcular"))
+
+        empleados = []
+        sueldos = []
+        suma = 0
+
+        for (let i = 0; i<cant;i++){
+            nomb = prompt('Digite el nombre del empleado')
+            sueldo = Number(prompt('Digite el sueldo del empleado'));
+            empleados+=[nomb]
+            // empleados.append(nomb)
+            sueldos+=[sueldo]
+            // sueldos.append(sueldo)
+            suma += sueldo
+        }
+
+        promedio = cant/suma
+
+        emp_envio = []
+
+
+        for (let x = 0; x<cant;x++) {
+            if (sueldos[x] > promedio) {
+                emp_envio+=[empleados[x]]
+            }
+        }
+
+        alert(emp_envio)
+
+    </script>
+</body>
+</html>
