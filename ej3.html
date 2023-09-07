@@ -7,15 +7,20 @@
 </head>
 <body>
     <script>
-        numer = Number(prompt("digite el numero a calcular el factorial"))
+        function caclc(numer) {
 
-        fact = 1
-        for (let i = numer;i > 1;i--) {
-            fact *= i
-            console.log(fact)
+            fact = 1
+            for (let i = numer;i > 1;i--) {
+                fact *= i
+                console.log(fact)
+            }
+
+            alert(fact)
         }
 
-        alert(fact)
+        numer = Number(prompt("digite el numero a calcular el factorial"))
+
+        caclc(numer)
     </script>
 </body>
 </html>
