@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function primos() {
+            prim = []
+            for (let x = 250; x <= 550;x++){
+                cantidad = 0
+                for (let i = 1;i <= 550;i++) {
+                    if (x % i == 0) {
+                        cantidad += 1
+                    }
+                }
+                if (cantidad == 2) {
+                    prim.push(x)
+                }
+            }
+            alert(prim)
+        }
+        
+        primos()
+    </script>
+</body>
+</html>
